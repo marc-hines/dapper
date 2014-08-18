@@ -14,7 +14,7 @@ $include-ext-eventmanager: false;
 $include-ext-evented: true;
 $include-ext-focusmanager: false;
 $include-ext-globalevents: true;
-$include-ext-img: false;
+$include-ext-img: true;
 $include-ext-loadmask: true;
 $include-ext-mixin: true;
 $include-ext-progressbar: true;

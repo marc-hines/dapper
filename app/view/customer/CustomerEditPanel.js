@@ -81,7 +81,7 @@ Ext.define("dapper.view.customer.CustomerEditPanel",{
                     fieldLabel: 'Address 1',
                     labelAlign: 'right',
                     labelWidth: 70,
-                    name: 'customer_addr1',
+                    name: 'customer_addr1'
                 },
                 {
                     xtype: 'textfield',
@@ -91,7 +91,7 @@ Ext.define("dapper.view.customer.CustomerEditPanel",{
                     fieldLabel: 'Address 2',
                     labelAlign: 'right',
                     labelWidth: 70,
-                    name: 'customer_addr2',
+                    name: 'customer_addr2'
                 },
                 {
                     xtype: 'textfield',

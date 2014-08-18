@@ -189,7 +189,7 @@ Ext.define("dapper.view.customer.CustomerGridPanel",{
             dockedItems: [{
                 xtype: 'toolbar',
                 ui: 'footer',
-                items: dockedButtons,
+                items: dockedButtons
             }],
 
             listeners: {

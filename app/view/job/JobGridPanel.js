@@ -151,7 +151,7 @@ Ext.define("dapper.view.job.JobGridPanel",{
             text: 'Last Invoiced',
             flex: 1,
             sortable: true,
-            dataIndex:'view_last_invoice_dt',
+            dataIndex:'view_last_invoice_dt'
         });
 
         if (me.urlSuffix == 'SHOW::DELETED' || me.urlSuffix == 'SHOW::ACTIVE') {
@@ -189,7 +189,7 @@ Ext.define("dapper.view.job.JobGridPanel",{
             dockedItems: [{
                 xtype: 'toolbar',
                 ui: 'footer',
-                items: dockedButtons,
+                items: dockedButtons
             }],
 
             listeners: {

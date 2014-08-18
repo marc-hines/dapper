@@ -64,7 +64,7 @@ Ext.define("dapper.view.receivables.ReceivablesCustomerEditPanel",{
                 text: 'Date',
                 flex: 1,
                 sortable: true,
-                dataIndex:'invoice_dt',
+                dataIndex:'invoice_dt'
             }, {
                 text: 'Desc',
                 flex: 2,

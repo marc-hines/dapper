@@ -30,6 +30,6 @@ Ext.define('dapper.view.main.Main', {
         width: 180
     },{
         region: 'center',
-        xtype: 'app-main-tab-view',
+        xtype: 'app-main-tab-view'
     }]
 });

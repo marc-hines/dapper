@@ -75,7 +75,7 @@ Ext.define("dapper.view.receivables.ReceivablesGridView",{
                 text: 'Date',
                 flex: 1,
                 sortable: true,
-                dataIndex:'invoice_dt',
+                dataIndex:'invoice_dt'
             }, {
                 xtype: 'numbercolumn',
                 format:'0,000.00',

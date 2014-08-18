@@ -11,7 +11,7 @@ Ext.define('dapper.model.CollectionSummaryGridModel', {
     }, {
         name: 'view_invoice_count', type: 'number'
     }, {
-        name: 'view_balance_31_45', type: 'number',
+        name: 'view_balance_31_45', type: 'number'
     }, {
         name: 'blank_balance_31_45', type: 'number',
         convert: function(value, record) {
