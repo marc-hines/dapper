@@ -1,4 +1,4 @@
-Ext.define('Sparkle.store.InvoiceBehaviorStore', {
+Ext.define('dapper.store.InvoiceBehaviorStore', {
     extend: 'Ext.data.Store',
     xtype: 'app-invoice-behavior-Store',
 
@@ -10,13 +10,13 @@ Ext.define('Sparkle.store.InvoiceBehaviorStore', {
     autoSync: false,
     autoDestroy: false,
     storeId: 'InvoiceBehaviorStore',
-    model: 'Sparkle.model.InvoiceBehaviorModel',
+    model: 'dapper.model.InvoiceBehaviorModel',
     proxy: {
         type: 'rest',
         url: 'php/rest_api.php/invoicebehaviors/SHOW::ACTIVE',
         reader: {
             type: 'json',
-            root: 'data'
+            rootProperty: 'data'
         },
         writer: {
             type: 'json'

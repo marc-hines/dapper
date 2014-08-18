@@ -38,7 +38,10 @@ Ext.define('dapper.Application', {
     ],
 
     stores: [
-        // TODO: add global / shared stores here
+        'JobFrequencyStore',
+        'InvoiceFrequencyStore',
+        'InvoiceBehaviorStore',
+        'MessageStore'
     ],
     
     controllers: [

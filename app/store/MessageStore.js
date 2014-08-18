@@ -1,4 +1,4 @@
-Ext.define('Sparkle.store.MessageStore', {
+Ext.define('dapper.store.MessageStore', {
     extend: 'Ext.data.Store',
     xtype: 'app-message-Store',
 
@@ -10,13 +10,13 @@ Ext.define('Sparkle.store.MessageStore', {
     autoSync: false,
     autoDestroy: false,
     storeId: 'MessageStore',
-    model: 'Sparkle.model.MessageModel',
+    model: 'dapper.model.MessageModel',
     proxy: {
         type: 'rest',
         url: 'php/rest_api.php/messages/SHOW::ACTIVE',
         reader: {
             type: 'json',
-            root: 'data'
+            rootProperty: 'data'
         },
         writer: {
             type: 'json'
