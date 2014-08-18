@@ -781,6 +781,12 @@ $include-dapper-view-receivables-receivablesgridviewmodel: false;
 $include-dapper-view-search-mainsearchview: false;
 $include-dapper-view-search-mainsearchviewcontroller: false;
 $include-dapper-view-search-mainsearchviewmodel: false;
+$include-dapper-view-user-useractivegridview: false;
+$include-dapper-view-user-useractivegridviewcontroller: false;
+$include-dapper-view-user-useractivegridviewmodel: false;
+$include-dapper-view-user-userdeletedgridview: false;
+$include-dapper-view-user-userdeletedgridviewcontroller: false;
+$include-dapper-view-user-userdeletedgridviewmodel: false;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
