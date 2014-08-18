@@ -92,7 +92,7 @@ Ext.define("dapper.view.customer.CustomerGridPanel",{
             listeners: {
                 click: function() {
                     var viewId = 'CustomerEditView_New';
-                    var tabpanel = dapper.refs.ViewportTabView;
+                    var tabpanel = dapper.refs.MainTabView;
                     var alreadyCreatedView = Ext.getCmp(viewId);
                     if (alreadyCreatedView == null) {
                         var view = Ext.create('dapper.view.customer.CustomerEditView', {
@@ -202,7 +202,7 @@ Ext.define("dapper.view.customer.CustomerGridPanel",{
                         var selection = me.getView().getSelectionModel().getSelection()[0];
                         if (selection) {
 
-                            var tabpanel = dapper.refs.ViewportTabView;
+                            var tabpanel = dapper.refs.MainTabView;
                             var viewxtype = 'app-customer-edit-view';
                             var viewId = viewxtype+'_'+selection.data.customer_dbid;
                             var alreadyCreatedView = Ext.getCmp(viewId);

@@ -1,9 +1,16 @@
 
 Ext.define("dapper.view.job.JobActiveGridView",{
-    "extend": "Ext.panel.Panel",
+    "extend": "dapper.view.job.JobGridPanel",
     "controller": "job-jobactivegridview",
     "viewModel": {
         "type": "job-jobactivegridview"
     },
-    "html": "Hello, World!!"
+
+    xtype: 'app-job-active-grid-view',
+    title: 'Active Jobs',
+    iconCls: 'icon-job',
+    closable: true,
+    itemId: 'JobActiveGridPanel',
+    urlSuffix: 'SHOW::ACTIVE'
+
 });

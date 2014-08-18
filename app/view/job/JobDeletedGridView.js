@@ -1,9 +1,16 @@
 
 Ext.define("dapper.view.job.JobDeletedGridView",{
-    "extend": "Ext.panel.Panel",
+    "extend": "dapper.view.job.JobGridPanel",
     "controller": "job-jobdeletedgridview",
     "viewModel": {
         "type": "job-jobdeletedgridview"
     },
-    "html": "Hello, World!!"
+
+    xtype: 'app-job-deleted-grid-view',
+    title: 'Deleted Jobs',
+    iconCls: 'icon-job',
+    closable: true,
+    itemId: 'JobDeletedGridPanel',
+    urlSuffix: 'SHOW::DELETED'
+
 });
