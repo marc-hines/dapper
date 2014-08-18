@@ -11,6 +11,8 @@ Ext.define("dapper.view.main.MainMenuView",{
 
         me = this;
         
+        dapper.refs.MainMenuView = me;
+
         Ext.apply(me, {
             rootVisible: false,
             hideHeaders: true,
@@ -69,7 +71,7 @@ Ext.define("dapper.view.main.MainMenuView",{
                 itemmousedown: function( model, record, index ) {
                     var viewxtype = record.raw.viewxtype;
                     if (viewxtype) {
-                        var tabpanel = dapper.view.main.MainTabView;
+                        var tabpanel = dapper.refs.MainTabView;
                         var alreadyCreatedView = Ext.getCmp(viewxtype);
                         if (alreadyCreatedView == null) {
                             var view = Ext.createByAlias('widget.'+viewxtype, {id: viewxtype});

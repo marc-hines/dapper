@@ -8,10 +8,43 @@ Ext.define('dapper.Application', {
     
     name: 'dapper',
 
+    requires: [
+        'Ext.data.proxy.Rest'
+    ],
+
+    views: [
+        'user.UserActiveGridView',
+        'user.UserDeletedGridView',
+        'job.JobGridPanel',
+        'job.JobActiveGridView',
+        'job.JobDeletedGridView',
+        'job.JobForCustomerView',
+        'job.JobEditPanel',
+        'job.JobEditView',
+        'jobcode.JobcodeActiveGridView',
+        'jobcode.JobcodeDeletedGridView',
+        'message.MessageActiveGridView',
+        'message.MessageDeletedGridView',
+        'customer.CustomerActiveGridView',
+        'customer.CustomerDeletedGridView',
+        'customer.CustomerActiveGridView',
+        'customer.CustomerEditPanel',
+        'customer.CustomerEditView',
+        'receivables.ReceivablesGridView',
+        'receivables.CollectionGridView',
+        'receivables.CollectionSummaryGridView',
+        'receivables.ReceivablesCustomerEditPanel',
+        'search.MainSearchView'
+    ],
+
     stores: [
         // TODO: add global / shared stores here
     ],
     
+    controllers: [
+        'MainController'
+    ],
+
     launch: function () {
         // TODO - Launch the application
     }

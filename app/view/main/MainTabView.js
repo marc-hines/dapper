@@ -15,6 +15,8 @@ Ext.define("dapper.view.main.MainTabView",{
 
         me = this;
 
+        dapper.refs.MainTabView = me;
+
         me.callParent();
         
     }
