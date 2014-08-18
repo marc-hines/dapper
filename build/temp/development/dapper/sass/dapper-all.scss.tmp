@@ -760,6 +760,12 @@ $include-dapper-view-jobcode-jobcodedeletedgridviewmodel: false;
 $include-dapper-view-main-main: true;
 $include-dapper-view-main-maincontroller: true;
 $include-dapper-view-main-mainmodel: true;
+$include-dapper-view-message-messageactivegridview: false;
+$include-dapper-view-message-messageactivegridviewcontroller: false;
+$include-dapper-view-message-messageactivegridviewmodel: false;
+$include-dapper-view-message-messagedeletedgridview: false;
+$include-dapper-view-message-messagedeletedgridviewcontroller: false;
+$include-dapper-view-message-messagedeletedgridviewmodel: false;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
