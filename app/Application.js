@@ -34,7 +34,8 @@ Ext.define('dapper.Application', {
         'receivables.CollectionGridView',
         'receivables.CollectionSummaryGridView',
         'receivables.ReceivablesCustomerEditPanel',
-        'search.MainSearchView'
+        'search.MainSearchView',
+        'widget.TextArea'
     ],
 
     stores: [
