@@ -1,9 +1,21 @@
 
 Ext.define("dapper.view.main.MainTabView",{
-    "extend": "Ext.panel.Panel",
+    "extend": "Ext.tab.Panel",
+    "xtype": "app-main-tab-view",
     "controller": "main-maintabview",
     "viewModel": {
         "type": "main-maintabview"
     },
-    "html": "Hello, World!!"
+
+    requires:[
+        'Ext.tab.Panel'
+    ],
+
+    initComponent: function() {
+
+        me = this;
+
+        me.callParent();
+        
+    }
 });
