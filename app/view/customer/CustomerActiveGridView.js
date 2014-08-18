@@ -1,9 +1,16 @@
 
 Ext.define("dapper.view.customer.CustomerActiveGridView",{
-    "extend": "Ext.panel.Panel",
+    "extend": "dapper.view.customer.CustomerGridPanel",
     "controller": "customer-customeractivegridview",
     "viewModel": {
         "type": "customer-customeractivegridview"
     },
-    "html": "Hello, World!!"
+
+    xtype: 'app-customer-active-grid-view',
+    title: 'Active Customers',
+    //iconCls: 'icon-customer',
+    closable: true,
+    itemId: 'CustomerActiveGrid',
+    urlSuffix: 'SHOW::ACTIVE'
+
 });
