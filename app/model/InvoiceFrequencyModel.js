@@ -1,8 +1,12 @@
 Ext.define('dapper.model.InvoiceFrequencyModel', {
     extend: 'Ext.data.Model',
-    
-    fields: [
-        { name: 'invoice_frequency_dbid', type: 'string' }
+    xtype: 'app-invoice-frequency-model',
 
-    ]
+    fields: [{
+        name: 'invoice_frequency_dbid', type: 'string'
+    }, {
+        name: 'invoice_frequency_id', type: 'string'
+    }, {
+        name: 'invoice_frequency_desc', type: 'string'
+    }]
 });

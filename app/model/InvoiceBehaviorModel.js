@@ -1,8 +1,12 @@
 Ext.define('dapper.model.InvoiceBehaviorModel', {
     extend: 'Ext.data.Model',
-    
-    fields: [
-        { name: 'invoice_behavior_dbid', type: 'string' }
+    xtype: 'app-invoice-behavior-model',
 
-    ]
+    fields: [{
+        name: 'invoice_behavior_dbid', type: 'string'
+    }, {
+        name: 'invoice_behavior_id', type: 'string'
+    }, {
+        name: 'invoice_behavior_desc', type: 'string'
+    }]
 });
