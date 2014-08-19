@@ -67,27 +67,16 @@ Ext.define("dapper.view.main.MainMenuView",{
                 ]
             },
 
-            listeners: {
-                itemmousedown: function( model, record, index ) {
-                    var viewxtype = record.raw.viewxtype;
-                    if (viewxtype) {
-                        var tabpanel = dapper.refs.MainTabView;
-                        var alreadyCreatedView = Ext.getCmp(viewxtype);
-                        if (alreadyCreatedView == null) {
-                            var view = Ext.createByAlias('widget.'+viewxtype, {id: viewxtype});
-                            tabpanel.add(view);
-                            tabpanel.setActiveTab(view);
-                        } else {
-                            tabpanel.setActiveTab(alreadyCreatedView);
-                        }
-                    }
-                }
-            }
+
 
         });
 
         me.callParent();
         
+    },
+
+    listeners: {
+        itemmousedown: 'onItemMouseDown'
     }
 
 });
