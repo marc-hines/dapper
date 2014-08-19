@@ -32,12 +32,12 @@ Ext.define("dapper.view.customer.CustomerEditView",{
             items: [{
                 xtype: 'app-customer-edit-panel',
                 customerDbid: me.customerDbid
-            }, {
+            /*}, {
                 xtype: 'app-job-for-customer-view',
                 customerDbid: me.customerDbid
             }, {
                 xtype: 'app-receivables-customer-edit-panel',
-                customerDbid: me.customerDbid
+                customerDbid: me.customerDbid*/
             }]
         });
 
