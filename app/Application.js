@@ -9,7 +9,8 @@ Ext.define('dapper.Application', {
     name: 'dapper',
 
     requires: [
-        'Ext.data.proxy.Rest'
+        'Ext.data.proxy.Rest',
+        'Ext.data.validator.*'
     ],
 
     views: [
