@@ -65,9 +65,7 @@ Ext.define("dapper.view.main.MainMenuView",{
                         { text: "Audit", access: 'admin', leaf: true }
                     ] }
                 ]
-            },
-
-
+            }
 
         });
 

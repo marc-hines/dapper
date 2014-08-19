@@ -114,13 +114,8 @@ Ext.define('dapper.model.JobModel', {
         name: 'OLD_job_deleted_dt', type: 'date'
     }],
 
-    validations: [{
-        type: 'length',
-        field: 'job_id',
-        min: 1
-    }, {
-        type: 'length',
-        field: 'job_name',
-        min: 1
-    }]
+    validators: {
+        job_id: 'presence',
+        job_name: 'presence'
+    }
 });

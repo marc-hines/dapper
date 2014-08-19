@@ -3,23 +3,19 @@ Ext.define('dapper.model.MessageModel', {
     xtype: 'app-Message-model',
     
     fields: [{
-        name: 'message_dbid'
+        name: 'message_dbid', type: 'string'
     }, {
-        name: 'message_id'
+        name: 'message_id', type: 'string'
     }, {
-        name: 'message_desc'
+        name: 'message_desc', type: 'string'
     }, {
-        name: 'message_deleted_sw'
+        name: 'message_deleted_sw', type: 'string'
     }, {
-        name: 'message_deleted_dt'
+        name: 'message_deleted_dt', type: 'string'
     }],
-    validations: [{
-        type: 'length',
-        field: 'message_id',
-        min: 1
-    }, {
-        type: 'length',
-        field: 'message_desc',
-        min: 1
-    }]
+
+    validators: {
+        message_id: 'presence',
+        message_desc: 'presence'
+    }
 });

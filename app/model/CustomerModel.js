@@ -109,9 +109,8 @@ Ext.define('dapper.model.CustomerModel', {
     }, {
         name: 'OLD_customer_deleted_dt', type: 'string'
     }],
-    validations: [{
-        type: 'length',
-        field: 'customer_id',
-        min: 1
-    }]
+
+    validators: {
+        customer_id: 'presence'
+    }
 });
